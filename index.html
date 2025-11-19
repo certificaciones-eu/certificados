@@ -2,9 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Certificados</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Visor de Imagen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,32 +11,14 @@
             <h1>Verificador de Certificados</h1>
             <p>Sistema de validación y descarga de certificados digitales</p>
         </div>
-        
-        <div class="content">
-            <div id="validatedMessage">
-                <i class="fas fa-check-circle"></i> Certificado Validado
-            </div>
-            
-            <div class="image-container">
-                <div class="placeholder" id="imagePlaceholder">
-                    <i class="far fa-file-image"></i>
-                    <p>El certificado aparecerá aquí después de la validación</p>
-                </div>
-                <img id="userImage">
-            </div>
-            
-            <div id="title" class="title"></div>
-            <p id="errorMessage" class="error" style="display:none;"></p>
-            <button id="downloadBtn" style="display:none;">
-                <i class="fas fa-download"></i> Descargar Certificado
-            </button>
+        <div class="image-wrapper">
+            <img id="userImage" alt="Imagen del usuario">
+            <div id="validatedMessage" class="validated">✔ Validado</div>
         </div>
-        
-        <div class="footer">
-            <p>Sistema seguro de verificación de certificados &copy; 2023</p>
-        </div>
+        <div id="title" class="title"></div>
+        <p id="errorMessage" class="error" style="display:none;"></p>
+        <button id="downloadBtn" style="display:none;">Descargar Certificado</button>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
