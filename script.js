@@ -44,7 +44,7 @@ if (!userId) {
                     downloadBtn.style.display = "inline-block";
                     downloadBtn.onclick = () => downloadImage(img.src, user.filename);
 
-                }, 1000);
+                }, 2000);
 
             } else {
                 title.textContent = "❌ Usuario no encontrado";
